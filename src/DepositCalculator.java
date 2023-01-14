@@ -9,8 +9,8 @@ public class DepositCalculator {
         return roundAvoid(amount+amount * yearRate * depositPeriod,2);
     }
     double  roundAvoid(double value, int places) {
-        double scaLe= Math.pow(10, places);
-        return Math.round(value*scaLe) / scaLe;
+        double scaLe = Math.pow(10, places);
+        return Math.round(value * scaLe) / scaLe;
     }
     void calculateDeposit() {
         int period;
